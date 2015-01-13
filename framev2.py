@@ -60,7 +60,6 @@ def frame_image(image):
     draw.rectangle([(10,40),(width-10,10)],fill=BLACK)
     
     
-    del draw
     # Make the new image, starting with all transparent
     result = PIL.Image.new('RGBA', mask.size, (0,0,0,0))
     result.paste(image, (50,height-50), mask=mask)
